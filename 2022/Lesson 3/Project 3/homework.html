@@ -1,0 +1,90 @@
+<!-- создать форму несколько раз, добавить новые элементы что-то изменить, поиграться с ней -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework</title>
+</head>
+<body>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <h2>Homework </h2>
+        <div>
+            <p><i>You can write something if you want.</i></p>
+            <textarea tabindex="1" placeholder="print your think here..." name="comment"  cols="60" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <p><b>Choose an element</b></p>
+            <div><input tabindex="2" type="radio" name="mia" value="first">First element</div>
+            <div><input tabindex="2" disabled type="radio" name="mia" value="second">Second element</div>
+            <div><input tabindex="2" type="radio" name="mia" value="thrith">Thrith element</div>
+            <div><input tabindex="2" autofocus type="radio" name="mia" value="fourth">Tourth element</div>
+            <div><input tabindex="2" checked type="radio" name="mia" value="fiveth">Fiveth element</div>
+        </div>
+        <br>
+        <div>
+            <p><mark> Magic Email </mark></p>
+            <div><input tabindex="3" type="text" name="useremail" placeholder="email"></div>
+            <br>
+            <span style="background-color: red ;">Pretty Name</span>
+            <br>
+            <br>
+            <div><input tabindex="4" type="text" name="username" placeholder="name" ></div>
+            <br>
+            <span style="background-color:rgb(38, 247, 10);">Hidden password</span>
+            <br>
+            <br>
+            <div><input tabindex="5" type="password" name="userpass" placeholder="password" ></div>
+            <br>
+            <span style="background-color:rgb(4, 117, 247);">Verify password</span>
+            <br>
+            <br>
+            <div><input tabindex="6" type="password" name="verifypass" placeholder="check" ></div>
+        </div>
+        <br>
+        <div>
+            <button tabindex="7" style="padding:20px; background-color: darkmagenta;" type="submit" >Send</button>
+            <button tabindex="8" style="padding:20px; background-color: coral;" type="reset">Refresh</button>
+        </div>
+        <br>
+        <div>
+            <p><strong>Choose your fruit</strong></p>
+            <div><input tabindex="9" type="checkbox" name="fruit" value="apple">Apple</div>
+            <div><input tabindex="10" checked type="checkbox" name="fruit" value="orange">Orange</div>
+            <div><input tabindex="11" type="checkbox" name="fruit" value="banan">Banan</div>
+            <div><input tabindex="12" type="checkbox" name="fruit" value="Cherry">Cherry</div>
+            <div><input tabindex="13" disabled type="checkbox" name="fruit" value="plante">Plante :D</div>
+        </div>
+        <br>
+        <br>
+        <div>
+            <p>Select a number</p>
+            <select multiple name="number">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option selected value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="file" name="userphoto">
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </form>
+</body>
+</html>

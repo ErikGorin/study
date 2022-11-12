@@ -1,0 +1,149 @@
+/* Обнуление */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/* конец обнуление */
+
+/* CODE */
+
+span {
+  font-size: 40px;
+}
+
+div{
+  color: azure;
+  background-color: black;
+}
+
+.block{
+  color: black;
+  background-color: white;
+  margin-top: 20px;
+}
+.span1{
+  font-style: italic;
+  font-size: 20px;
+  color: red;
+} 
+
+.block span{
+  font-size: 100%;
+  color: blueviolet;
+}
+
+/* 
+Заметки
+
+.block{           ---> это селектор 
+
+  color: black;
+  background-color: white;  ----> это параметры селектора 
+  margin-top: 20px;
+}
+
+span{
+  font-size: 20px;
+}
+
+  Приоритет
+  .block{
+  color: black;
+  background-color: white;  ----> параметры или слекторы которые находятся ниже имеюит приоритет,
+  margin-top: 20px;               словно водопад за одним исключением,
+  }                               болле приоритетнее является та запись где используется и тег и класс 
+
+  div.block{    -------> ТЕГ + КЛАСС 
+    color: red; 
+  }
+
+  Вложенность
+.block span{         ------>  это вложеность, то есть если мы хотим что-то конкретный span или другой тег 
+  font-size: 100%;            имел другие параметры, мы его помещаем в блок и запись следущим образом КЛАСС + ТЕГ
+  color: blueviolet;
+}
+
+  Вложенность первого уровня
+.block>span{         ------> запись со знаком больше, это означает что все параметры будут применяться 
+  font-size: 100%;           к тегу первой вложенности который находится выше 
+  color: blueviolet;
+}
+
+
+Наследование
+Параметры наследуються но есть те которые остаються
+*/

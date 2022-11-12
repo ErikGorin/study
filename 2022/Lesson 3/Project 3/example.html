@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example</title>
+  </head>
+  <body>
+    <form action="#" method="post" enctype="multipart/form-data">
+      <div>
+        <p><i>Name</i></p>
+        <input placeholder="Name" tabindex="1" type="text" name="username" />
+        <p><b>Password</b></p>
+        <input
+          placeholder="Password"
+          tabindex="2"
+          type="password"
+          name="userpass"
+        />
+        <p><i>Email</i></p>
+        <input placeholder="Email" tabindex="3" type="email" name="useremail" />
+        <p><strong>Phone</strong></p>
+        <input placeholder="Phone" tabindex="4" type="tel" name="userphone" />
+      </div>
+      <br />
+      <div>
+        <p>Gender</p>
+        <div>
+          <input tabindex="5" type="radio" name="gender" value="1" />Men
+        </div>
+
+        <div>
+          <input
+            checked
+            autofocus
+            tabindex="5"
+            type="radio"
+            name="gender"
+            value="2"
+          />Women
+        </div>
+      </div>
+      <br />
+      <div>
+        <p>Number</p>
+        <div><input tabindex="6" type="checkbox" name="1" value="num" />1</div>
+        <div>
+          <input checked tabindex="7" type="checkbox" name="2" value="num" />2
+        </div>
+        <div><input tabindex="8" type="checkbox" name="3" value="num" />3</div>
+        <div><input tabindex="9" type="checkbox" name="4" value="num" />4</div>
+        <div>
+          <del
+            ><input
+              disabled
+              tabindex="10"
+              type="checkbox"
+              name="5"
+              value="num"
+            />5</del
+          >
+        </div>
+      </div>
+      <br />
+      <div>
+        <p>
+          <mark><strong>Comment</strong></mark>
+        </p>
+        <div>
+          <textarea
+            tabindex="11"
+            placeholder="Write a comment..."
+            name=""
+            cols="50"
+            rows="6"
+          ></textarea>
+        </div>
+      </div>
+      <div>
+        <p>Place photo below</p>
+        <div><input tabindex="12" type="file" name="userphoto" /></div>
+      </div>
+      <br />
+      <div>
+        <p><strong>Choose color</strong></p>
+        <select tabindex="13" multiple name="color">
+          <option value="red">red</option>
+          <option value="green">green</option>
+          <option selected value="blue">blue</option>
+          <option value="dark">dark</option>
+          <option value="dark">dark</option>
+          <option value="dark">dark</option>
+          <option value="dark">dark</option>
+        </select>
+      </div>
+      <br />
+      <button tabindex="14" type="submit">Send</button>
+      <button tabindex="15" type="reset">Delete</button>
+    </form>
+  </body>
+</html>
