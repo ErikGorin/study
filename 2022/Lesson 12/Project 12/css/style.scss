@@ -1,0 +1,31 @@
+  /* !CODE */
+@import "nullstyle.scss";
+
+  $fz:80px;
+  $col:rgb(0, 60, 255);
+
+
+  body{
+    padding: 30px;
+    .block{
+        font-size: 40px;
+        color: $col;
+        span{
+            color: red;
+            font-size: $fz;
+        }
+        .error{
+            color: $col;
+            font-size: 40px;
+            margin-top: 40px;
+        }
+      }
+      .span{
+        color: cornflowerblue;
+        font-style: italic;
+      }
+  }
+  
+
+//   Сайт препроцессора SASS
+// https://sass-scss.ru/guide/
