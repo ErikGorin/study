@@ -1,0 +1,23 @@
+@import "./css/nullstyle.scss";
+
+
+// Вложеность
+.block {
+    font-size: 14px;
+    padding: 30px;
+    line-height: 60px;
+
+    span{
+        color: greenyellow;
+    }
+}
+.error {
+}
+.link {
+}
+
+// Обращение к селектору класса 
+//  & - обращение к родительскому классу 
+// 
+// 
+// 
