@@ -1,0 +1,313 @@
+@charset "UTF-8";
+/* Обнуление */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/* конец обнуление */
+.head {
+  font-family: "Work Sans";
+}
+.head .head__top {
+  background: url("../img/logo.png") left no-repeat;
+  margin-left: 220px;
+  height: 91px;
+}
+.head .head__top .head__top__burger {
+  background: url("../img/burger.png") right no-repeat;
+  margin-right: 200px;
+  height: 91px;
+}
+.head .head__greeting {
+  height: 401px;
+  background-color: #f6f6f6;
+  text-align: center;
+}
+.head .head_greeting__hello {
+  padding-top: 40px;
+  font-size: 55.5px;
+  line-height: 66px;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  color: #10cab7;
+}
+.head .head_greeting__info {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  color: #2c4755;
+}
+
+.content {
+  font-family: "Work Sans";
+}
+.content .content_input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 500px;
+}
+.content .content_input span {
+  font-size: 18 px;
+  line-height: 66px;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  color: #2c4755;
+}
+.content .content_input .content_input__light {
+  background: url("../img/light.png") center 40px no-repeat;
+  padding: 120px;
+  font-size: 15px;
+  line-height: 32px;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  color: #575757;
+}
+.content .content_input .content_input__colna {
+  background: url("../img/colba.png") center 40px no-repeat;
+  padding: 120px;
+  font-size: 15px;
+  line-height: 32px;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  color: #575757;
+}
+.content .content_input .content_input__globus {
+  background: url("../img/globus.png") center 45px no-repeat;
+  padding: 120px;
+  font-size: 15px;
+  line-height: 32px;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  color: #575757;
+}
+.content .content__services .content__services_1 {
+  font-size: 161.9px;
+  line-height: 195px;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  color: #f6f6f6;
+  text-align: center;
+  position: relative;
+  bottom: 100px;
+}
+.content .content__services .content__services_2 {
+  text-align: center;
+  font-size: 25px;
+  line-height: 35px;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  color: #575757;
+  position: relative;
+  bottom: 160px;
+}
+.content .content__services .content__services__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0px 200px 100px 100px;
+  padding: 100px;
+  text-align: left;
+}
+.content .content__services .content__services__icon p {
+  text-align: left;
+}
+.content .content__services .content__services__icon p span {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 800;
+  color: #1f2021;
+  text-align: center;
+}
+.content .content__services .content__services__icon .content__services__icon_1 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  background: url("../img/icon_1.png") left 10px no-repeat;
+  padding-left: 50px;
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  color: #4d4c4c;
+}
+.content .content__services .content__services__icon .content__services__icon_2 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  background: url("../img/icon_2.png") left 10px no-repeat;
+  padding-left: 50px;
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  color: #4d4c4c;
+}
+.content .content__services .content__services__icon .content__services__icon_3 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  background: url("../img/icon_3.png") left 10px no-repeat;
+  padding-left: 50px;
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  color: #4d4c4c;
+}
+.content .content__services .content__services__icon .content__services__icon_4 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  background: url("../img/icon_4.png") left 10px no-repeat;
+  padding-left: 50px;
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  color: #4d4c4c;
+}
+.content .content__portfolio .content__portfolio_1 {
+  font-size: 161.9px;
+  line-height: 195px;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  color: #f6f6f6;
+  text-align: center;
+  position: relative;
+  bottom: 100px;
+}
+.content .content__portfolio .content__portfolio_2 {
+  text-align: center;
+  font-size: 25px;
+  line-height: 35px;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  color: #575757;
+  position: relative;
+  bottom: 160px;
+}
+.content .content__portfolio .content__portfolio_cube {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.333%;
+          flex: 0 1 33.333%;
+  margin: 0 100px;
+  padding: 20px;
+}
+.content .content__portfolio .content__portfolio_cube .content__portfolio_cube_1 span {
+  font-size: 20px;
+  line-height: 66px;
+  font-weight: 800;
+  color: #1f2021;
+}
+.content .content__portfolio .content__portfolio_cube .content__portfolio_cube_2 span {
+  font-size: 20px;
+  line-height: 66px;
+  font-weight: 800;
+  color: #1f2021;
+}
+.content .content__portfolio .content__portfolio_cube .content__portfolio_cube_3 span {
+  font-size: 20px;
+  line-height: 66px;
+  font-weight: 800;
+  color: #1f2021;
+}
+.botom {
+  font-family: "Work Sans";
+}
