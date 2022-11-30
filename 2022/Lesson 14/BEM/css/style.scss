@@ -1,0 +1,332 @@
+/* Обнуление */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/* конец обнуление */
+
+/* CODE */
+body {
+  font-family: Lato;
+}
+
+.header {
+  background-image: url(../img/header/bg_header.jpg);
+  height: 100%;
+  position: static;
+  .header__logo {
+    position: relative;
+    text-align: center;
+    padding: 50px 0 70px 0;
+  }
+  .header__text {
+    text-align: center;
+    font-size: 34px;
+    line-height: 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: #ffffff;
+    &:after{
+      content: "";
+      position: absolute;
+      width: 50px;
+      bottom: 300px;
+      height: 1px;
+      left: 50%;
+      background-color: #ffffff;
+      margin-left: -25px;
+    }
+    p {
+      font-size: 26px;
+      font-weight: 400;
+      text-transform: none;
+      letter-spacing: 0.16em;
+      color: #ffffff;
+    }
+    
+  }
+  .header__button {
+    position: relative;
+    text-align: center;
+    padding-top: 150px;
+    .header__arrow{
+      padding-top: 50px;
+    }
+  }
+  .header__btn {
+    margin: 0 auto;
+    width: 182px;
+    height: 47px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    background-color: rgba(240, 231, 231, 0);
+  }
+}
+
+.menu {
+  // position: relative;
+  text-align: center;
+  padding: 30px 0 50px 0;
+  display: flex;
+
+  .menu__item {
+    flex: 0 0 25%;
+    color: #636363;
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+  
+}
+
+
+.about {
+  max-width: 826px;
+  margin: 0 auto;
+  .about__body {
+  }
+  .about__header {
+    margin-bottom: 65px;
+  }
+  .about__title {
+    margin-bottom: 30px;
+  }
+  .about__text {
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 300;
+    color: #868585;
+    max-width: 688px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .about__row {
+    display: flex;
+    margin: 0 -15px;
+  }
+  .about__column {
+    flex: 0 0 33.333%;
+    padding: 0 15px;
+  }
+
+  .title {
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: #000000;
+    position: relative;
+    text-align: center;
+    padding-bottom: 30px;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 50px;
+      bottom: 0;
+      height: 1px;
+      left: 50%;
+      background-color: #000000;
+      margin-left: -25px;
+    }
+  }
+
+  .item-about {
+    .item-about__icon {
+      width: 92px;
+      height: 92px;
+      border-radius: 50%;
+      margin: 0 auto;
+      border: 2px solid #f1f1f1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 41px;
+    }
+    .item-about__title {
+      font-size: 22px;
+      line-height: 1.2;
+      font-weight: 400;
+      letter-spacing: 0.16em;
+      color: #000000;
+      text-align: center;
+      margin-bottom: 35px;
+    }
+    .item-about__text {
+      font-size: 14px;
+      line-height: 26px;
+      font-weight: 300;
+      color: #868585;
+      text-align: center;
+    }
+  }
+}
+
+// !Сайт методологии БЭМ
+// https://ru.bem.info/methodology/quick-start/
+// =================================================
+// !ОЧЕНЬ ценю твой ЛАЙК и КОММЕНТ!
+// Поддержать канал: https://www.patreon.com/freelancerlifestyle
+// Telegram канал: https://t.me/freelancer_lifestyle или https://teleg.run/freelancer_lifestyle
+// Instagram: https://www.instagram.com/freelancer.lifestyle/
+// Facebook: https://www.facebook.com/freelancerlifestyle/
+// Telegram ЧАТ: https://t.me/flschat или https://teleg.run/flschat
+// =================================================
+// !Блок – это функционально независимый компонент страницы, который может быть повторно использован. Когда мы задаем блоку имя класса то должны отвечать на вопрос «что это?» а не «какой, как выглядит?».
+// =================================================
+// !Элемент – это составная часть блока, которая не может использоваться в отрыве от него. Так же как для блока имя класса должно отвечать на вопрос «Что это?», но синтаксис записи будет следующим:
+// имякласса__имяэлемента
+// =================================================
+// !Модификатор.
+// Применяется для определения или уточнения внешнего вида, состояния или поведения блока либо элемента. Когда нужно выделить некий объект из множества таких же.
+// Имя класса модификатора должно отвечать на вопрос «какой?» «как выглядит?» «как себя ведет\состояние?»
+// Модификатор дописывается к классу блока либо элемента путем дублирования основного класса с добавлением одного нижнего подчеркивания и имени модификатора.
+// !===================Вложенность блоков==============================
+// <!-- Блок `about` -->
+// <div class="about">
+// 	<!-- Вложенный блок `title` -->
+// 	<div class="title"></div>
+// 	<!-- Вложенный блок `subtitle` -->
+// 	<div class="subtitle"></div>
+// </div>
+// !===================Вложенность элементов==============================
+// <!-- Верно -->
+// <!-- Блок `row` -->
+// <div class="row">
+// 	<!-- Элемент `column` -->
+// 	<div class="row__column ">
+// 		<!-- Элемент `item` -->
+// 		<div class="row__item">
+
+// 		</div>
+// 	</div>
+// </div>
+
+// <!-- Неверно -->
+// <!-- Блок `row` -->
+// <div class="row">
+// 	<!-- Элемент `column` -->
+// 	<div class="row__column ">
+// 		<!-- Элемент `item` -->
+// 		<div class="row__column__item">
+
+// 		</div>
+// 	</div>
+// </div>
+// !====================Принадлежность элементов===================================
+// <!-- Верный пример -->
+// <!-- Блок `about` -->
+// <div class=" about">
+// 	<!-- Элемент `title` -->
+// 	<div class="about__title"></div>
+// 	<!-- Элемент `subtitle` -->
+// 	<div class=" about__subtitle"></div>
+// </div>
+
+// <!-- Неверный пример -->
+// <!-- Блок `about` -->
+// <div class=" about">
+// 	<!-- Элемент `title` -->
+// 	<div class="about__title"></div>
+// </div>
+// <!-- Элемент `subtitle` -->
+// <div class=" about__subtitle"></div>
+
+// !====================Необязательность элементов===================================
+// <!-- Блок `about` -->
+// <div class=" about">
+// 	<!-- Вложенный блок `title` -->
+// 	<div class="title"></div>
+// 	<!-- Вложенный блок `subtitle` -->
+// 	<div class="subtitle"></div>
+// </div>
+// !====================Модификатор===================================
+// <nav class="menu">
+// 	<a href="" class="menu__item menu__item_active">HOME</a>
+// 	<a href="" class="menu__item">ABOUT US</a>
+// 	<a href="" class="menu__item">PORTFOLIO</a>
+// 	<a href="" class="menu__item">CONTACT</a>
+// </nav>
+// !====================Микс===================================
+// <!-- Блок `about` -->
+// <div class=" about">
+// 	<!-- Элемент `title` -->
+// 	<div class="about__title title"></div>
+// 	<!-- Элемент `subtitle` -->
+// 	<div class=" about__subtitle subtitle"></div>
+// </div>
