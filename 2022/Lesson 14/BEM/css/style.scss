@@ -101,11 +101,11 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.16em;
     color: #ffffff;
-    &:after{
+    &:after {
       content: "";
       position: absolute;
       width: 50px;
-      bottom: 300px;
+      bottom: 0px;
       height: 1px;
       left: 50%;
       background-color: #ffffff;
@@ -118,13 +118,12 @@ body {
       letter-spacing: 0.16em;
       color: #ffffff;
     }
-    
   }
   .header__button {
     position: relative;
     text-align: center;
     padding-top: 150px;
-    .header__arrow{
+    .header__arrow {
       padding-top: 50px;
     }
   }
@@ -141,7 +140,7 @@ body {
 .menu {
   // position: relative;
   text-align: center;
-  padding: 30px 0 50px 0;
+  padding: 30px 0 100px 0;
   display: flex;
 
   .menu__item {
@@ -151,13 +150,12 @@ body {
     line-height: 1.2;
     font-weight: 700;
   }
-  
 }
-
 
 .about {
   max-width: 826px;
   margin: 0 auto;
+  margin-bottom: 100px;
   .about__body {
   }
   .about__header {
@@ -233,6 +231,166 @@ body {
       font-weight: 300;
       color: #868585;
       text-align: center;
+    }
+  }
+}
+
+.portfolio {
+  background-color: #f3f3f3;
+  .portfolio__title {
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: #000000;
+    position: relative;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 50px;
+  }
+  .portfolio__nav {
+    text-align: center;
+    padding: 30px 0 100px 0;
+    display: flex;
+    .portfolio__item {
+      flex: 0 0 25%;
+      color: #636363;
+      font-size: 15px;
+      line-height: 1.2;
+      font-weight: 700;
+    }
+  }
+
+  .portfolio__blocks {
+    // margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 0 1 50%;
+
+    .portfolio__block {
+      margin: 10px;
+      height: 360px;
+      width: 530px;
+      background-color: #eaeaea;
+    }
+  }
+
+  .portfolio__button {
+    position: relative;
+    text-align: center;
+    padding: 50px 0 50px 0;
+    .portfolio__btn {
+      width: 182px;
+      height: 47px;
+      border: 1px solid #030303;
+      color: #030303;
+    }
+  }
+}
+
+.partner {
+  background: url("../img/partner/bg_partner.jpg");
+  height: 60%;
+  .partner__title {
+    padding-top: 100px;
+    text-align: center;
+    font-size: 30.4px;
+    line-height: 1.2;
+    font-weight: 300;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+  }
+  .partner__logo {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0px;
+    .partner__logo-img {
+      padding: 0px 80px;
+    }
+  }
+}
+
+.contact {
+  .contact__title {
+    margin: 70px 0 50px 0;
+  }
+  .title {
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: #000000;
+    position: relative;
+    text-align: center;
+    padding-bottom: 30px;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 50px;
+      bottom: 0;
+      height: 1px;
+      left: 50%;
+      background-color: #000000;
+      margin-left: -25px;
+    }
+  }
+  .contact__column {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 0 1 50%;
+    .contact__feedback {
+      margin-right: 50px ;
+      .contact__feedback-form{
+        .form{
+          display: flex;
+          flex: 0 1 50%;
+          
+        }
+      }
+      .contact__feedback-form input {
+        border-top: 1px solid #000;
+        background-color: #f8f7f7;
+      }
+      .contact__feedback-form p {
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: #000000;
+      }
+
+      .feedback__message {
+        .feedback__comment {
+          border-top: 1px solid #000;
+          background-color: #f8f7f7;
+        }
+      }
+      .feedback__btn {
+        .btn {
+          font-size: 14px;
+          line-height: 1.2;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.06em;
+          color: #000000;
+        }
+      }
+    }
+
+    .contact__information {
+      .contact__text {
+      }
+      .contact__name {
+      }
+      .item-contact__icon {
+      }
+      .contact__email {
+      }
     }
   }
 }

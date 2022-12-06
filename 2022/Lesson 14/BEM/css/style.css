@@ -117,7 +117,7 @@ body {
   content: "";
   position: absolute;
   width: 50px;
-  bottom: 300px;
+  bottom: 0px;
   height: 1px;
   left: 50%;
   background-color: #ffffff;
@@ -149,7 +149,7 @@ body {
 
 .menu {
   text-align: center;
-  padding: 30px 0 50px 0;
+  padding: 30px 0 100px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -167,6 +167,7 @@ body {
 .about {
   max-width: 826px;
   margin: 0 auto;
+  margin-bottom: 100px;
 }
 .about .about__header {
   margin-bottom: 65px;
@@ -248,4 +249,165 @@ body {
   font-weight: 300;
   color: #868585;
   text-align: center;
+}
+
+.portfolio {
+  background-color: #f3f3f3;
+}
+.portfolio .portfolio__title {
+  font-size: 34px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #000000;
+  position: relative;
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 50px;
+}
+.portfolio .portfolio__nav {
+  text-align: center;
+  padding: 30px 0 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.portfolio .portfolio__nav .portfolio__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+  color: #636363;
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+.portfolio .portfolio__blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+.portfolio .portfolio__blocks .portfolio__block {
+  margin: 10px;
+  height: 360px;
+  width: 530px;
+  background-color: #eaeaea;
+}
+.portfolio .portfolio__button {
+  position: relative;
+  text-align: center;
+  padding: 50px 0 50px 0;
+}
+.portfolio .portfolio__button .portfolio__btn {
+  width: 182px;
+  height: 47px;
+  border: 1px solid #030303;
+  color: #030303;
+}
+
+.partner {
+  background: url("../img/partner/bg_partner.jpg");
+  height: 60%;
+}
+.partner .partner__title {
+  padding-top: 100px;
+  text-align: center;
+  font-size: 30.4px;
+  line-height: 1.2;
+  font-weight: 300;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+.partner .partner__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 100px 0px;
+}
+.partner .partner__logo .partner__logo-img {
+  padding: 0px 80px;
+}
+
+.contact .contact__title {
+  margin: 70px 0 50px 0;
+}
+.contact .title {
+  font-size: 34px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #000000;
+  position: relative;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.contact .title:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  bottom: 0;
+  height: 1px;
+  left: 50%;
+  background-color: #000000;
+  margin-left: -25px;
+}
+.contact .contact__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+.contact .contact__column .contact__feedback {
+  margin-right: 50px;
+}
+.contact .contact__column .contact__feedback .contact__feedback-form .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+.contact .contact__column .contact__feedback .contact__feedback-form input {
+  border-top: 1px solid #000;
+  background-color: #f8f7f7;
+}
+.contact .contact__column .contact__feedback .contact__feedback-form p {
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+.contact .contact__column .contact__feedback .feedback__message .feedback__comment {
+  border-top: 1px solid #000;
+  background-color: #f8f7f7;
+}
+.contact .contact__column .contact__feedback .feedback__btn .btn {
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #000000;
 }
