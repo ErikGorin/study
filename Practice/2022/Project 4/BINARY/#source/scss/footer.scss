@@ -1,5 +1,49 @@
-footer{}
-//====================================================================================================
+.footer {
+    background-color: #3c3c3c;
+    padding: 45px 0;
+    position: relative;
+    z-index: 5;
+    // .footer__row
+    &__row {
+        text-align: center;
+    }
+    // .footer__logo
+    &__logo {
+        display: inline-block;
+        margin: 0 0 40px 0;
+    }
+    // .footer__menu
+    &__menu {
+        text-align: center;
+    }
+    // .footer__list
+    &__list {
+        @include flexbox();
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 35px 0;
+        li{
+            margin: 0 15px;
+        }
+    }
+    // .footer__link
+    &__link {
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 400;
+        color: #a4a4a4;
+        &:hover{
+            color: #fff;
+        }
+    }
+    // .footer__text
+    &__text {
+        font-family: 'Myriad Pro';
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 400;
+        color: #6c6c6c;
+    }
+}
 
-//====================================================================================================
 
